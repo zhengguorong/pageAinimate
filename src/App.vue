@@ -24,7 +24,7 @@ body {
 .header {
   width:100%;
   height:44px;
-  background:#0058f1;
+  background:#ea6f5a;
   color:#fff;
   line-height:44px;
   text-align: center;

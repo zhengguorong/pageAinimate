@@ -4,8 +4,8 @@
       <div class="title">主页</div>
     </div>
      <ul>
-        <li><router-link to="pageA">pageA</router-link></li>
-        <li><router-link to="pageB">pageB</router-link></li>
+        <li><router-link to="pageA">页面标题A</router-link></li>
+        <li><router-link to="pageB">页面标题B</router-link></li>
     </ul>
   </div>
 </template>
@@ -15,3 +15,10 @@ export default {
   name: 'index'
 }
 </script>
+
+<style scoped>
+  li {
+    text-align: left;
+  }
+</style>
+

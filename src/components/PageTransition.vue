@@ -29,24 +29,30 @@
 
 <style scoped>
   .child-view {
-  position: absolute;
-  width:100%;
-  transition: all .8s cubic-bezier(.55,0,.1,1);
+    position: absolute;
+    transition: all .3s cubic-bezier(.55,0,.1,1);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
   }
   .slide-left-enter, .slide-right-leave-active {
-    opacity: 0;
-    -webkit-transform: translate(50px, 0);
-    transform: translate(50px, 0);
+    opacity: 1;
+    -webkit-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+    z-index: 1;
   }
   .slide-left-leave-active, .slide-right-enter {
-    opacity: 0;
+    opacity: .8;
     -webkit-transform: translate(-50px, 0);
     transform: translate(-50px, 0);
+    background:#ccc;
   }
   .header {
     position:absolute;
     height:44px;
-    background:#0058f1;
+    background:#ea6f5a;
     width:100%
   }
 </style>
