@@ -16,6 +16,9 @@ npm run dev
 ## 演示效果
 ![](pageAnimate.gif)
 
+## iOS滑动效果，可以切换到ios分支获取代码
+![](ios_animate.gif)
+
 ## 快速集成
 1.复制PageTransittion.vue到项目目录。
 2.修改router配置。
@@ -28,7 +31,7 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'PageTransition', 
+      name: 'PageTransition',
       component: PageTransition, // 引入页面切换组件
       children: [{
         path: '',
@@ -49,7 +52,7 @@ const router = new Router({
 ### 记录页面状态
 要实现页面前进后台动画，首先必须知道页面状态（即是页面是进入下一页，还是后退），我们可以通过改写router.go方法记录回退状态，页面如果需要回退时，调用
 ```
-$router.go(-1) 
+$router.go(-1)
 ```
 
 修改router/index.vue
