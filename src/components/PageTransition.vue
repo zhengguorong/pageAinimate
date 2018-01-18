@@ -30,7 +30,7 @@
 <style scoped>
   .child-view {
     position: absolute;
-    transition: all .3s cubic-bezier(.55,0,.1,1);
+    transition: all .4s cubic-bezier(.55,0,.1,1);
     top: 0;
     bottom: 0;
     left: 0;
@@ -44,7 +44,7 @@
     z-index: 1;
   }
   .slide-left-leave-active, .slide-right-enter {
-    opacity: .8;
+    opacity: .6;
     -webkit-transform: translate(-50px, 0);
     transform: translate(-50px, 0);
     background:#ccc;
