@@ -52,7 +52,6 @@
   .header {
     position:absolute;
     height:44px;
-    background:#ea6f5a;
     width:100%
   }
 </style>
