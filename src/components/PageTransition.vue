@@ -38,16 +38,17 @@
     left: 0;
     right: 0;
     background: #fff;
+    will-change: transform;
   }
   .slide-left-enter, .slide-right-leave-active {
-    -webkit-transform: translate(100%, 0);
-    transform: translate(100%, 0);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
     z-index: 1;
   }
-  /* .slide-left-leave-active, .slide-right-enter {
-    -webkit-transform: translate(-50px, 0);
-    transform: translate(-50px, 0);
-  } */
+  .slide-left-leave-active, .slide-right-enter {
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+  }
   .header {
     position:absolute;
     height:44px;
