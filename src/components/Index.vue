@@ -16,9 +16,15 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
   li {
     text-align: left;
+  }
+  a {
+    text-decoration: none
+    }
+  a:active, a:active, a:visited {
+    color: #000
   }
 </style>
 

@@ -22,7 +22,9 @@
         this.transitionName = 'slide-left'
       }
       this.$router.isBack = false
-      next()
+      setTimeout(() => {
+        next()
+      }, 60)
     }
   }
 </script>
@@ -38,17 +40,14 @@
     background: #fff;
   }
   .slide-left-enter, .slide-right-leave-active {
-    opacity: 1;
     -webkit-transform: translate(100%, 0);
     transform: translate(100%, 0);
     z-index: 1;
   }
-  .slide-left-leave-active, .slide-right-enter {
-    opacity: .6;
+  /* .slide-left-leave-active, .slide-right-enter {
     -webkit-transform: translate(-50px, 0);
     transform: translate(-50px, 0);
-    background:#ccc;
-  }
+  } */
   .header {
     position:absolute;
     height:44px;
