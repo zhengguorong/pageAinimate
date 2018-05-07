@@ -48,6 +48,7 @@
   .slide-left-leave-active, .slide-right-enter {
     -webkit-transform: translateX(-50px);
     transform: translateX(-50px);
+    z-index: -1;
   }
   .header {
     position:absolute;
