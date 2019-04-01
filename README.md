@@ -139,7 +139,9 @@ const router = new Router({
 ```
 
 
+## License
 
+[996 License](https://github.com/zhengguorong/pageAinimate/blob/master/LICENSE)
 
 
 
